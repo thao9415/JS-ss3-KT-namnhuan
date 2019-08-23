@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let year=parseInt(prompt("Enter a year"));
+    if(year%4==0) {
+        if(year%100==0) {
+            if(year%400==0) {
+                alert(year+" là năm nhuận") //đúng cả 3 điều kiện trên
+            }else {
+                alert(year + " không là năm nhuận") //thoả mãn chia hết cho 4 và 100,nhưng k chia hết cho 400
+            }
+        }else {
+            alert(year+" là năm nhuận") //chia hết cho 4, nhưng ko chia hết cho 100,400
+        }
+    }else {
+        alert(year+ " không là năm nhuận") //ko chia hết cho 4
+    };
+</script>
+</body>
+</html>
